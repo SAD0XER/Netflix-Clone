@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #999999;
+}
