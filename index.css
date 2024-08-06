@@ -1,12 +1,108 @@
+:root {
+  --nav-content-txt-line-height: 1.5rem;
+  --nav-content-txt-color: #ffffff;
+  --nav-content-border-radius: 0.25rem;
+  ;
+}
+
 body {
   margin: 0;
+  font-family: "Netflix Sans",
+    "Helvetica Neue",
+    "Segoe UI",
+    Roboto,
+    Ubuntu, sans-serif;
+}
+
+.main-bg-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.main-bg-img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.25) translateY(-10%);
+  object-fit: cover;
+}
+
+.gradient-frame {
+  background: rgb(0 0 0 / 40%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /* Navbar */
-nav {
+header {
+  overflow: visible;
+  height: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-content-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: #999999;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+}
+
+#nav-nf-logo {
+  height: 2.5rem;
+}
+
+.nav-lang-signin-container {
+  display: flex;
+}
+
+.lang-icon-dropdown-container {
+  display: inline-flex;
+  align-items: center;
+  border: 0.01rem solid rgba(128, 128, 128, 0.7);
+  border-radius: var(--nav-content-border-radius);
+  padding: 0.25rem 1rem;
+  gap: 0.5rem;
+}
+
+.lang-icon-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+#lang-icon {
+  font-size: 1rem;
+}
+
+#lang-dropdown {
+  line-height: var(--nav-content-txt-line-height);
+  font-size: 1rem;
+  appearance: none;
+  background-color: transparent;
+  color: var(--nav-content-txt-color) !important;
+  border: none !important;
+}
+
+.dropdown-icon-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.singin-btn-container {
+  margin-left: 1.5rem;
+}
+
+.singin-btn-container button {
+  background-color: #e50914;
+  border: none !important;
+  border-radius: var(--nav-content-border-radius);
+  line-height: var(--nav-content-txt-line-height);
+  color: var(--nav-content-txt-color) !important;
+  padding: 0.25rem 1rem;
+  font-weight: 600;
 }

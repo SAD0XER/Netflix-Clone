@@ -11,21 +11,47 @@
 
 <body>
   <main>
-    <nav>
-      <div class="nav-nf-logo"></div>
-
-      <div class="nav-data-set">
-        <div class="lang-icon">
-          <img src="./Assets/images/language-translate-icon.svg" alt="Multilanguage Icon">
+    <!-- Navbar -->
+    <header>
+      <div class="nav-content-container">
+        <!-- Navbar Netflix Logo -->
+        <div class="nav-nf-logo">
+          <img src="./Assets/images/nav-netflix-logo.svg" alt="Netflix Logo" id="nav-nf-logo">
         </div>
-        <div class="lang-dropdown-container">
-          <select id="lang-dropdown">
-            <option value="en">English</option>
-            <option value="hi-IN">हिंदी</option>
-          </select>
+
+        <!-- Navbar Language and SignIn Button Container -->
+        <div class="nav-lang-signin-container">
+          <div class="lang-icon-dropdown-container">
+            <div class="lang-icon-container">
+              <img src="./Assets/images/language-icon.svg" id="lang-icon" alt="Language Icon">
+            </div>
+
+            <select id="lang-dropdown">
+              <option selected>English</option>
+              <option>हिंदी</option>
+            </select>
+
+            <div class="dropdown-icon-container"><img src="./Assets/images/dropdown-icon.svg" alt="Dropdown Icon"></div>
+          </div>
+
+          <!-- Sign In Button Container -->
+          <div class="singin-btn-container">
+            <button>Sign In</button>
+          </div>
         </div>
       </div>
-    </nav>
+    </header>
+
+    <!-- Background Image Container -->
+    <div class="main-bg-img-container">
+      <img alt="main-bg-img" src="./Assets/images/IN-en-20240729-bg-img-small.jpg"
+        srcset="./Assets/images/IN-en-20240729-bg-img-small.jpg 1000w, ./Assets/images/IN-en-20240729-bg-img-medium.jpg 1500w, ./Assets/images/IN-en-20240729-bg-img-large.jpg 1800w"
+        class="main-bg-img">
+      <!-- Gradient Frame for dark effect -->
+      <div class="gradient-frame"
+        style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);">
+      </div>
+    </div>
   </main>
 </body>
 
