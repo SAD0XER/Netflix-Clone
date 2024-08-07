@@ -36,7 +36,7 @@
 
           <!-- Sign In Button Container -->
           <div class="singin-btn-container">
-            <button>Sign In</button>
+            <button id="btn-signin">Sign In</button>
           </div>
         </div>
       </div>
@@ -44,12 +44,32 @@
 
     <!-- Background Image Container -->
     <div class="main-bg-img-container">
-      <img alt="main-bg-img" src="./Assets/images/IN-en-20240729-bg-img-small.jpg"
+      <img src="./Assets/images/IN-en-20240729-bg-img-small.jpg" alt="main-bg-img"
         srcset="./Assets/images/IN-en-20240729-bg-img-small.jpg 1000w, ./Assets/images/IN-en-20240729-bg-img-medium.jpg 1500w, ./Assets/images/IN-en-20240729-bg-img-large.jpg 1800w"
         class="main-bg-img">
+
       <!-- Gradient Frame for dark effect -->
       <div class="gradient-frame"
         style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);">
+      </div>
+    </div>
+
+    <!-- Hero Content Container -->
+    <div class="hero-content-container">
+      <h1 id="hero-headline">Unlimited movies, TV shows and more</h1>
+      <p id="hero-subheadline">Watch anywhere. Cancel anytime.</p>
+
+      <!-- Form Container -->
+      <div class="membetship-form-container">
+        <form>
+          <h3 id="hero-form-headline">Ready to watch? Enter your email to create or restart your membership.</h3>
+          <div class="input-element-group">
+            <label for="email-input" id="email-label">Email address</label>
+            <input type="email" id="email-input">
+            <button id="btn-get-started">Get Started <img src="./Assets/images/right-angle-icon.svg"
+                id="right-angle-icon" alt="Right Angle Icon"></button>
+          </div>
+        </form>
       </div>
     </div>
   </main>

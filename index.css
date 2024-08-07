@@ -2,16 +2,12 @@
   --nav-content-txt-line-height: 1.5rem;
   --nav-content-txt-color: #ffffff;
   --nav-content-border-radius: 0.25rem;
-  ;
+  --nf-primary-color: #e50914;
 }
 
 body {
   margin: 0;
-  font-family: "Netflix Sans",
-    "Helvetica Neue",
-    "Segoe UI",
-    Roboto,
-    Ubuntu, sans-serif;
+  font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", "Roboto", "Ubuntu", sans-serif;
 }
 
 .main-bg-img-container {
@@ -24,7 +20,7 @@ body {
 .main-bg-img {
   height: 100%;
   width: 100%;
-  transform: scale(1.25) translateY(-10%);
+  transform: scale(1.5) translateY(-6.3%);
   object-fit: cover;
 }
 
@@ -66,8 +62,9 @@ header {
   align-items: center;
   border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
-  padding: 0.25rem 1rem;
+  padding: 0.20rem 0.75rem;
   gap: 0.5rem;
+  background-color: rgb(20, 20, 20, 0.750);
 }
 
 .lang-icon-container {
@@ -97,7 +94,7 @@ header {
   margin-left: 1.5rem;
 }
 
-.singin-btn-container button {
+#btn-signin {
   background-color: #e50914;
   border: none !important;
   border-radius: var(--nav-content-border-radius);
@@ -105,4 +102,86 @@ header {
   color: var(--nav-content-txt-color) !important;
   padding: 0.25rem 1rem;
   font-weight: 600;
+  font-size: 0.87rem;
+}
+
+/* Main Content */
+.hero-content-container {
+  overflow: hidden;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 45%;
+  left: 0;
+  color: var(--nav-content-txt-color);
+  text-align: center;
+}
+
+#hero-headline {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+#hero-subheadline {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+#hero-form-headline {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+#email-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bab9b8;
+  position: absolute;
+  z-index: 1;
+  top: 86%;
+  left: 23.5%;
+}
+
+.input-element-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+  margin: 1rem auto 0;
+}
+
+#email-input {
+  background-color: rgb(20, 20, 20, 0.750);
+  border: 0.01rem solid rgba(128, 128, 128, 0.75);
+  border-radius: var(--nav-content-border-radius);
+  color: var(--nav-content-txt-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  width: auto;
+  padding: 1.5rem 5rem 0.5rem;
+}
+
+#email-input::placeholder {
+  color: #ce1414;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 1;
+}
+
+#btn-get-started {
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  min-height: 3.5rem;
+  border: none;
+  border-radius: var(--nav-content-border-radius);
+  background-color: var(--nf-primary-color);
+  color: var(--nav-content-txt-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
 }
