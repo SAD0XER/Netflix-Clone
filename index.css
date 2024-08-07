@@ -18,9 +18,7 @@ body {
 }
 
 .main-bg-img {
-  height: 100%;
-  width: 100%;
-  transform: scale(1.5) translateY(-6.3%);
+  transform: scale(1.36) translateY(-8.75%) translateX(-4%);
   object-fit: cover;
 }
 
@@ -46,7 +44,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2rem;
-  background-color: transparent;
 }
 
 #nav-nf-logo {
@@ -164,13 +161,6 @@ header {
   padding: 1.5rem 5rem 0.5rem;
 }
 
-#email-input::placeholder {
-  color: #ce1414;
-  font-size: 1rem;
-  line-height: 1.5;
-  opacity: 1;
-}
-
 #btn-get-started {
   width: auto;
   font-size: 1.5rem;
@@ -186,9 +176,72 @@ header {
   padding: 0 2rem;
 }
 
+/* Hero Section Divider */
 .hero-section-divider {
   width: 100%;
   height: 0.5rem;
   position: absolute;
   background-color: rgb(35, 35, 35);
+}
+
+/* Section: Enjoy on TV */
+.enjoyOnTV-container {
+  color: var(--nav-content-txt-color);
+  background-color: black;
+  min-height: auto;
+  padding: 4.5rem 0;
+}
+
+.enjoyOnTV-content-container {
+  margin: 0 2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.enjoyOnTV-description {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.enjoyOnTV-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.enjoyOnTV-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.enjoyOnTV-media {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.TV-container {
+  position: relative;
+}
+
+#TV {
+  width: 100%;
+  border: 0;
+}
+
+.video-container {
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
