@@ -152,7 +152,7 @@ header {
 
 #email-input {
   background-color: rgb(20, 20, 20, 0.750);
-  border: 0.01rem solid rgba(128, 128, 128, 0.75);
+  border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
   color: var(--nav-content-txt-color);
   font-size: 1rem;
@@ -244,4 +244,113 @@ header {
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Section: Download Shows */
+.downloadShows-container {
+  color: var(--nav-content-txt-color);
+  background-color: black;
+  min-height: auto;
+  padding: 4.5rem 0;
+}
+
+.downloadShows-content-container {
+  margin: 0 2rem;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left;
+}
+
+.downloadShows-description {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.downloadShows-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.downloadShows-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.downloadShows-media-container {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.mobile-container {
+  position: relative;
+}
+
+#mobile {
+  width: 100%;
+  border: 0;
+}
+
+.download-preview-container {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  width: 60%;
+  min-width: 15rem;
+  border: 2px solid rgba(128, 128, 128, 0.7);
+  box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+  border-radius: 0.75rem;
+  z-index: 1;
+  padding: 0.5rem 0.75rem;
+}
+
+.boxshot-st-container {
+  margin: 0 1rem 0 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+#boxshot-st {
+  border: 0;
+  width: 100%;
+  height: 4.5rem;
+}
+
+.download-preview-text-container {
+  text-align: left;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3rem 0;
+}
+
+#text-stranger-things {
+  font-weight: 500;
+}
+
+#text-downloading {
+  font-weight: 400;
+  color: #0071eb;
+}
+
+.downloading-gif-container {
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: -2px;
+  display: block;
+  background: url("./Assets/images/downloading.gif") center center no-repeat;
+  background-size: 100%;
+  content: '';
+  flex-grow: 0;
+  flex-shrink: 0;
 }
