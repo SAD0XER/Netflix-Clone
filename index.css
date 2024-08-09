@@ -416,3 +416,52 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Section: Create Kids Profile */
+.createKidsProfile-container {
+  color: var(--nav-content-txt-color);
+  background-color: black;
+  min-height: auto;
+  padding: 4.5rem 0;
+}
+
+.createKidsProfile-content-container {
+  margin: 0 2rem;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: left;
+}
+
+.createKidsProfile-description {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.createKidsProfile-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.createKidsProfile-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.createKidsProfile-media-container {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.kidsProfile-banner-container-container {
+  position: relative;
+}
+
+#kidsProfile-banner {
+  width: 100%;
+  border: 0;
+}
