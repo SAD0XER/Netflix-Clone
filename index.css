@@ -354,3 +354,65 @@ header {
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+/* Section: Watch Everywhere */
+.watchEverywhere-container {
+  color: var(--nav-content-txt-color);
+  background-color: black;
+  min-height: auto;
+  padding: 4.5rem 0;
+}
+
+.watchEverywhere-content-container {
+  margin: 0 2rem;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+
+.watchEverywhere-description {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.watchEverywhere-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+.watchEverywhere-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.watchEverywhere-media {
+  flex-basis: 50%;
+  padding: 0;
+  z-index: 1;
+}
+
+.iTV-container {
+  position: relative;
+}
+
+#iTV {
+  width: 100%;
+  border: 0;
+}
+
+.iTV-video-container {
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
