@@ -78,8 +78,8 @@ header {
   font-size: 1rem;
   appearance: none;
   background-color: transparent;
-  color: var(--nav-content-txt-color) !important;
-  border: none !important;
+  color: var(--nav-content-txt-color);
+  border: none;
 }
 
 .dropdown-icon-container {
@@ -93,10 +93,10 @@ header {
 
 #btn-signin {
   background-color: #e50914;
-  border: none !important;
+  border: none;
   border-radius: var(--nav-content-border-radius);
   line-height: var(--nav-content-txt-line-height);
-  color: var(--nav-content-txt-color) !important;
+  color: var(--nav-content-txt-color);
   padding: 0.25rem 1rem;
   font-weight: 600;
   font-size: 0.87rem;
@@ -124,6 +124,23 @@ header {
 #hero-subheadline {
   font-size: 1.5rem;
   font-weight: 400;
+  margin: 1rem 0;
+}
+
+.membership-form-container {
+  margin: 1.5rem 0 0;
+}
+
+#form-container {
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 61.5rem;
+  margin: 0 auto;
+}
+
+#membership-form {
+  display: flex;
+  flex-direction: column;
 }
 
 #hero-form-headline {
@@ -132,33 +149,70 @@ header {
   line-height: 1.5;
 }
 
-#email-label {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #bab9b8;
-  position: absolute;
-  z-index: 1;
-  top: 83%;
-  left: 23.5%;
+.form-element-container {
+  max-width: 36.625rem;
+  position: relative;
+  display: flex;
+  margin: 1rem auto 0.25rem auto;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  gap: 0;
 }
 
-.input-element-group {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-  gap: 0.5rem;
-  margin: 1rem auto 0;
+.label-container {
+  width: auto;
+  display: inline-flex;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  position: relative;
+  vertical-align: text-top;
+}
+
+#input-label {
+  position: absolute;
+  display: block;
+  user-select: none;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  left: 1rem;
+  top: 1rem;
+  z-index: 1;
+}
+
+.input-container {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  fill: currentcolor;
+  min-width: 12.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: normal;
+  line-height: 100%;
+  position: relative;
+  text-align: left;
+  z-index: 0;
 }
 
 #email-input {
   background-color: rgb(20, 20, 20, 0.750);
   border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
-  color: var(--nav-content-txt-color);
   font-size: 1rem;
   line-height: 1.5;
   width: auto;
-  padding: 1.5rem 5.5rem 0.5rem;
+  padding: 1.5rem 10rem 0.5rem 1rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  color: inherit;
+  background-clip: padding-box;
 }
 
 #btn-get-started {
@@ -166,14 +220,46 @@ header {
   font-size: 1.5rem;
   font-weight: 500;
   min-height: 3.5rem;
-  border: none;
   border-radius: var(--nav-content-border-radius);
   background-color: var(--nf-primary-color);
   color: var(--nav-content-txt-color);
-  display: flex;
-  align-items: center;
+  display: inline-flex;
   justify-content: center;
-  padding: 0 2rem;
+  align-items: center;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  line-height: 1;
+  flex: 0 0 auto;
+  margin-top: 0;
+  margin-left: 0.5rem;
+  appearance: none;
+  font-style: inherit;
+  font-variant: inherit;
+  font-stretch: inherit;
+  font-family: inherit;
+  font-optical-sizing: inherit;
+  font-size-adjust: inherit;
+  font-kerning: inherit;
+  font-feature-settings: inherit;
+  font-variation-settings: inherit;
+  user-select: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.right-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+}
+
+#right-angle-icon {
+  width: 1.5rem;
+  height: inherit;
+  margin-left: 0.75rem;
 }
 
 /* Hero Section Divider */

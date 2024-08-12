@@ -56,17 +56,22 @@
     <div class="hero-content-container">
       <h1 id="hero-headline">Unlimited movies, TV shows and more</h1>
       <p id="hero-subheadline">Watch anywhere. Cancel anytime.</p>
-
       <!-- Form Container -->
-      <div class="membetship-form-container">
-        <form>
-          <h3 id="hero-form-headline">Ready to watch? Enter your email to create or restart your membership.</h3>
-          <div class="input-element-group">
-            <label for="email-input" id="email-label">Email address</label>
-            <input type="email" id="email-input">
-            <button id="btn-get-started">Get Started <img src="./Assets/images/right-angle-icon.svg" id="right-angle-icon" alt="Right Angle Icon"></button>
-          </div>
-        </form>
+      <div class="membership-form-container">
+        <div id="form-container">
+          <form class="membetship-form">
+            <h3 id="hero-form-headline">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="form-element-container">
+              <div class="label-container"><label for="email-input" id="input-label">Email address</label>
+                <div class="input-container"><input autocomplete="email" minlength="5" maxlength="50" type="email" id="email-input" name="email" value=""></div>
+              </div>
+              <button role="button" id="btn-get-started" type="submit">Get Started
+                <div class="right-icon-container"><img src="./Assets/images/right-angle-icon.svg" id="right-angle-icon" alt="Right Angle Icon"></div>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="center-pixel default-ltr-cache-1qms9jn ekwtkbw0"></div>
       </div>
     </div>
 
@@ -169,23 +174,19 @@
       <div class="faq-content-container">
         <div class="faq-content">
           <h1 class="faq-title">Frequently Asked Questions</h1>
-
           <div class="faq-accordion-container">
-
             <!-- FAQ List Here -->
             <div class="accordion-item-container">
-
               <div class="accordion-item">
                 <!-- Accordion Header -->
                 <h3 class="accordion-head">
-                  <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <button class="accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body" aria-expanded="false" aria-controls="faq-body">
                     <span>What is Netflix?</span>
                     <img src="./Assets/images/plus-regular-icon.svg" alt="Plus Icon" id="plus-icon">
                   </button>
                 </h3>
-
                 <!-- Accordion Collapsable Body -->
-                <div id="collapseOne" class="accordion-body-container accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body-container collapse" id="faq-body">
                   <div class="accordion-body">
                     <span id="accordion-body-text">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!
                     </span>
