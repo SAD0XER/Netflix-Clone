@@ -50,7 +50,7 @@ header {
   height: 2.5rem;
 }
 
-.nav-lang-signin-container {
+.lang-signin-container {
   display: flex;
 }
 
@@ -59,7 +59,7 @@ header {
   align-items: center;
   border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
-  padding: 0.20rem 0.75rem;
+  padding: 0.25rem 0.75rem;
   gap: 0.5rem;
   background-color: rgb(20, 20, 20, 0.750);
 }
@@ -80,6 +80,11 @@ header {
   background-color: transparent;
   color: var(--nav-content-txt-color);
   border: none;
+  padding: 0;
+}
+
+#lang-dropdown option {
+  color: black
 }
 
 .dropdown-icon-container {
@@ -654,4 +659,127 @@ header {
 
 .faq-membership-form-container {
   margin-top: 2.85rem;
+}
+
+/* Footer Section */
+footer {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: black;
+  padding: 4.5rem 2rem;
+}
+
+.footer-content-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: inherit;
+  height: auto;
+}
+
+.footer-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: inherit;
+  width: 100%;
+  padding: 0;
+}
+
+.tel-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: inherit;
+  padding: 0;
+}
+
+.tel {
+  margin-bottom: 0.75rem;
+}
+
+#tel-number {
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.125rem;
+}
+
+.quick-link-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: inherit;
+  padding: 0;
+}
+
+.quick-link-content-container {
+  margin: 0.75rem 0;
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.ul-container {
+  box-sizing: border-box;
+  width: 100%;
+  display: inherit;
+  height: auto;
+}
+
+.ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: inherit;
+  padding: 0;
+  margin-top: -1rem;
+  width: inherit;
+}
+
+.ul-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 25%;
+  padding: 0;
+  margin: 0.9rem 0 0 0;
+}
+
+.ul-item-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.select-lang-content-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin-top: -0.5rem;
+}
+
+.select-lang-content {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin-top: -0.5rem;
+}
+
+.lang-signin-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: inherit;
+  padding: 0;
+}
+
+.nf-india {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: inherit;
+  padding: 0;
+}
+
+.nf-india-text {
+  font-size: 0.875rem;
+  margin-top: calc(0.75rem* 2);
 }
