@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signin.css">
+  <title>Netflix</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="nav-content-container">
+      <!-- Navbar Netflix Logo -->
+      <div class="nav-nf-logo">
+        <img src="./Assets/images/nav-netflix-logo.svg" alt="Netflix Logo" id="nav-nf-logo">
+      </div>
+    </div>
+  </header>
+
+  <!-- Background Image Container -->
+  <div class="main-bg-img-container">
+    <img src="./Assets/images/IN-en-20240729-bg-img-small.jpg" alt="main-bg-img" srcset="./Assets/images/IN-en-20240729-bg-img-small.jpg 1000w, ./Assets/images/IN-en-20240729-bg-img-medium.jpg 1500w, ./Assets/images/IN-en-20240729-bg-img-large.jpg 1800w" class="main-bg-img">
+
+    <!-- Gradient Frame for dark effect -->
+    <div class="gradient-frame" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);">
+    </div>
+  </div>
+
+  <!-- Sign In Section Container -->
+  <div class="signin-container">
+    <div class="signin-form-container">
+      <h1 id="form-header">Sign In</h1>
+      <form>
+        <div class="email-container">
+          <!-- <div class="label-container"><label for="email-input">Email or mobile number</label> -->
+          <!-- <div class="email-input-container"><input type="text" id="email-input"></div> -->
+          <div class="label-container"><label for="email-input" id="input-label">Email address</label>
+            <div class="input-container"><input autocomplete="email" minlength="5" maxlength="50" type="email" id="email-input" name="email" value=""></div>
+          </div>
+        </div>
+    </div>
+    </form>
+  </div>
+  </div>
+</body>
+
+</html>
