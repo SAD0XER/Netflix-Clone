@@ -71,7 +71,7 @@ header {
 
 #lang-dropdown {
   appearance: none;
-  padding: 0.25rem 2.25rem 0.25rem 2.25rem;
+  padding: 0.25rem 2.25rem;
   background-color: rgb(20, 20, 20, 0.750);
   border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
@@ -135,19 +135,20 @@ header {
   margin: 1.5rem 0 0;
 }
 
-#form-container {
+.form-container {
   text-align: center;
   box-sizing: border-box;
   max-width: 61.5rem;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-#membership-form {
+.membership-form {
   display: flex;
   flex-direction: column;
 }
 
-#hero-form-headline {
+.hero-form-headline {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
@@ -174,7 +175,7 @@ header {
   vertical-align: text-top;
 }
 
-#input-label {
+.input-label {
   position: absolute;
   display: block;
   user-select: none;
@@ -205,7 +206,7 @@ header {
   z-index: 0;
 }
 
-#email-input {
+.email-input {
   background-color: rgb(20, 20, 20, 0.750);
   border: 0.01rem solid rgba(128, 128, 128, 0.7);
   border-radius: var(--nav-content-border-radius);
@@ -219,7 +220,7 @@ header {
   background-clip: padding-box;
 }
 
-#btn-get-started {
+.btn-get-started {
   width: auto;
   font-size: 1.5rem;
   font-weight: 500;
@@ -260,7 +261,7 @@ header {
   height: 1.5rem;
 }
 
-#right-angle-icon {
+.right-angle-icon {
   width: 1.5rem;
   height: inherit;
   margin-left: 0.75rem;
@@ -438,7 +439,7 @@ header {
   outline: 2px solid rgb(0, 0, 0);
   outline-offset: -2px;
   display: block;
-  background: url("./Assets/images/downloading.gif") center center no-repeat;
+  background: url("/Assets/images/downloading.gif") center center no-repeat;
   background-size: 100%;
   content: '';
   flex-grow: 0;

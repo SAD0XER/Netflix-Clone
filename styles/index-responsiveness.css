@@ -1,9 +1,15 @@
 /* Smartphone */
 @media only screen and (max-width: 480px) {
-  .main-bg-img {
-    transform: scale(1.30) translate(-9%, -9%);
-    height: 120dvh;
+  .main-bg-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
     width: 100%;
+  }
+
+  .main-bg-img {
+    transform: scale(1) translate(0%, 0%);
+    height: 100dvh;
     object-fit: cover;
     object-position: center;
   }
@@ -14,7 +20,7 @@
 
   /* Navbar */
   .nav-content-container {
-    padding: 1.5rem 1.75rem;
+    padding: 1.5rem 1.5rem;
   }
 
   #nav-nf-logo {
@@ -22,7 +28,8 @@
   }
 
   #lang-dropdown {
-    display: none;
+    padding: 0.25rem 0;
+    /* border: 0.01rem solid rgba(128, 128, 128, 0.7); */
   }
 
   .singin-btn-container {
@@ -79,5 +86,26 @@
 
   #right-angle-icon {
     margin-left: 0.5rem;
+  }
+
+  /* Section: Download Shows */
+  .downloadShows-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  /* Section: Watch Everywhere */
+  .watchEverywhere-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+
+  /* Section: FAQ */
+  .faq-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0;
   }
 }
