@@ -1,5 +1,5 @@
 /* Smartphone */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .main-bg-img-container {
     position: relative;
     overflow: hidden;
@@ -15,7 +15,7 @@
   }
 
   .gradient-frame {
-    background: rgb(0 0 0 / 60%);
+    background: rgb(0 0 0 / 75%);
   }
 
   /* Navbar */
@@ -27,9 +27,17 @@
     height: 1.5rem;
   }
 
+  /* Language Dropdown */
+  .lang-icon-container {
+    right: 50.75dvw;
+  }
+
   #lang-dropdown {
-    padding: 0.25rem 0;
-    /* border: 0.01rem solid rgba(128, 128, 128, 0.7); */
+    padding: 0.25rem 1.5rem;
+  }
+
+  .dropdown-icon-container {
+    right: 31dvw;
   }
 
   .singin-btn-container {
@@ -38,8 +46,8 @@
 
   /* Main Content */
   .hero-content-container {
-    top: 35%;
-    padding: 0 2rem;
+    top: 25dvh;
+    padding: 0 2rem 2rem;
   }
 
   #hero-headline {
@@ -50,16 +58,19 @@
 
   #hero-subheadline {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 0 1rem;
   }
 
+  /* Membership Form Section */
   .membership-form-container {
     margin: 1rem 0 0;
   }
 
-  #hero-form-headline {
+  .hero-form-headline {
     font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
   }
 
   .form-element-container {
@@ -68,23 +79,24 @@
     align-items: center;
   }
 
-  #input-label {
+  .input-label {
     line-height: 1.25;
   }
 
-  #email-input {
-    padding: 1rem 10rem 0.5rem 1rem;
+  .email-input {
+    padding: 1rem 6.75rem 0.5rem 1rem;
+    margin: 0 0 0.1rem 0;
   }
 
-  #btn-get-started {
-    font-size: 1.25rem;
-    font-weight: 500;
-    min-height: 1.5rem;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+  .btn-get-started {
+    font-size: 1.2rem;
+    font-weight: 600;
+    min-height:0;
+    padding: 0.75rem;
     margin-top: 1rem;
   }
 
-  #right-angle-icon {
+  .right-angle-icon {
     margin-left: 0.5rem;
   }
 
