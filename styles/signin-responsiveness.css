@@ -1,0 +1,54 @@
+/* Smartphone */
+@media only screen and (max-width: 480px) {
+  .main-bg-img-container {
+    display: none;
+  }
+
+  .nav-content-container {
+    padding: 1rem;
+  }
+
+  #nav-nf-logo {
+    width: 20dvw;
+  }
+
+  /* SignIn Section */
+  .signin-container {
+    position: initial;
+    padding: 0 5%;
+    margin: 20% 0 0;
+  }
+
+  /* Form Footer Section */
+  .recaptcha-terms-of-use {
+    margin: 0 0 6rem;
+  }
+
+  /* Divider: Section Divider  */
+  .section-divider {
+    display: inherit;
+    width: 100%;
+    height: 0.2dvh;
+    position: absolute;
+    background-color: rgb(35, 35, 35);
+  }
+
+  /* Footer Section */
+  .page-footer {
+    margin: 0;
+    padding: 2.5rem 2rem;
+  }
+
+  .ul-item {
+    width: 50%;
+  }
+
+  /* Language Dropdown */
+  .foot-lang-icon-container {
+    right: 23.25em;
+  }
+
+  .foot-dropdown-icon-container {
+    right: 18.75em;
+  }
+}

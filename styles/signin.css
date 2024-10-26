@@ -188,6 +188,11 @@ header {
   text-decoration: underline;
 }
 
+/* Divider: Section Divider */
+.section-divider {
+  display: none;
+}
+
 /* Footer Section */
 .page-footer {
   position: static;
