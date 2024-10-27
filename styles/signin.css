@@ -6,14 +6,6 @@ body {
   background-color: black;
 }
 
-.main-bg-img-container {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-}
-
 .main-bg-img {
   transform: scale(1) translate(-8.75%, -18%);
   object-fit: cover;
@@ -102,6 +94,7 @@ header {
 
 .or {
   color: rgba(255, 255, 255, 0.7);
+  margin: 1.5rem 0;
 }
 
 .signin-code {
@@ -194,6 +187,10 @@ header {
 }
 
 /* Footer Section */
+footer {
+  background-color: transparent;
+}
+
 .page-footer {
   position: static;
   margin-top: 24.23%;
